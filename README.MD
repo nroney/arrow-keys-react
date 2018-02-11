@@ -1,4 +1,6 @@
-# Arrow Keys React
+# Special Keys React
+
+This based on leon-good-life's [arrow-keys-react](https://github.com/leon-good-life/arrow-keys-react)
 
 [![npm version](https://badge.fury.io/js/arrow-keys-react.svg)](http://badge.fury.io/js/arrow-keys-react)
 
@@ -9,15 +11,15 @@ Easily integrate your react component with keyboard arrow keys, with the same co
 # Usage
 1. Install the npm package:
 ```bash
-    npm install --save arrow-keys-react
+    npm install --save special-keys-react
 ```
 2. Import it:
 ```javascript
-    import ArrowKeysReact from 'arrow-keys-react';
+    import SpecialKeysReact from 'special-keys-react';
 ```
-3. Config arrow keys events ('left', 'right', 'up', 'down'), at least one of them, in your component constructor, or in render function:
+3. Config arrow keys events ('left', 'right', 'up', 'down', 'backspace'), at least one of them, in your component constructor, or in render function:
 ```javascript
-    ArrowKeysReact.config({
+    SpecialKeysReact.config({
       left: () => {
         console.log('left key detected.');
       },
@@ -29,19 +31,22 @@ Easily integrate your react component with keyboard arrow keys, with the same co
       },
       down: () => {
         console.log('down key detected.');
+      },
+      backspace: () => {
+        console.log('backspace detected')
       }
     });
 ```
 
 4. Integrate with your React component:
 ```javascript
-  <YourComponent {...ArrowKeysReact.events} />
+  <YourComponent {...SpecialKeysReact.events} />
 ```
 
 # Example
 ```jsx
 import React, { Component } from 'react';
-import ArrowKeysReact from 'arrow-keys-react';
+import SpecialKeysReact from 'special-keys-react';
 
 class App extends Component {
   constructor(props){
@@ -49,7 +54,7 @@ class App extends Component {
     this.state = {
       content: 'Use arrow keys on your keyboard!'
     };
-    ArrowKeysReact.config({
+    SpecialKeysReact.config({
       left: () => {
         this.setState({
           content: 'left key detected.'
@@ -69,12 +74,17 @@ class App extends Component {
         this.setState({
           content: 'down key detected.'
         });
+      },
+      backspace: () => {
+        this.setState({
+           content: 'down key detected.'
+        });
       }
     });
   }
   render() {
     return (
-      <div {...ArrowKeysReact.events} tabIndex="1">
+      <div {...SpecialKeysReact.events} tabIndex="1">
         {this.state.content}
       </div>
     );

@@ -1,1 +1,1 @@
-module.exports = require('./lib/ArrowKeysReact');
+module.exports = require('./lib/SpecialKeysReact');
