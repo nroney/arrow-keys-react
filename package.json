@@ -1,7 +1,7 @@
 {
   "name": "special-keys-react",
   "version": "1.0.0",
-  "description": "Easily integrate your react component with keyboard special keys, with the same configuration used in swipe-react and wheel-react packages.",
+  "description": "",
   "main": "main.js",
   "scripts": {
     "build": "babel src --out-dir lib --presets=es2015 --copy-files",
