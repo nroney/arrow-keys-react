@@ -1,6 +1,6 @@
 # Special Keys React
 
-This based on leon-good-life's [arrow-keys-react](https://github.com/leon-good-life/arrow-keys-react)
+This is based on leon-good-life's [arrow-keys-react](https://github.com/leon-good-life/arrow-keys-react)
 
 # Usage
 
