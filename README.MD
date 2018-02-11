@@ -2,10 +2,6 @@
 
 This based on leon-good-life's [arrow-keys-react](https://github.com/leon-good-life/arrow-keys-react)
 
-[![npm version](https://badge.fury.io/js/arrow-keys-react.svg)](http://badge.fury.io/js/arrow-keys-react)
-
-[![NPM](https://nodei.co/npm/arrow-keys-react.png)](https://nodei.co/npm/arrow-keys-react/)
-
 Easily integrate your react component with keyboard arrow keys, with the same configuration used in [swipe-react](https://github.com/leon-good-life/swipe-react) and [wheel-react](https://github.com/leon-good-life/wheel-react) packages.
 
 # Usage
