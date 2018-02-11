@@ -13,7 +13,7 @@ Easily integrate your react component with keyboard arrow keys, with the same co
 ```javascript
     import SpecialKeysReact from 'special-keys-react';
 ```
-3. Config arrow keys events ('left', 'right', 'up', 'down', 'backspace'), at least one of them, in your component constructor, or in render function:
+3. Config special keys events ('left', 'right', 'up', 'down', 'backspace'), at least one of them, in your component constructor, or in render function:
 ```javascript
     SpecialKeysReact.config({
       left: () => {
