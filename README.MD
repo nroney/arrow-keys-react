@@ -5,15 +5,12 @@ This based on leon-good-life's [arrow-keys-react](https://github.com/leon-good-l
 Easily integrate your react component with keyboard arrow keys, with the same configuration used in [swipe-react](https://github.com/leon-good-life/swipe-react) and [wheel-react](https://github.com/leon-good-life/wheel-react) packages.
 
 # Usage
-1. Install the npm package:
-```bash
-    npm install --save special-keys-react
-```
-2. Import it:
+
+Import it:
 ```javascript
     import SpecialKeysReact from 'special-keys-react';
 ```
-3. Config special keys events ('left', 'right', 'up', 'down', 'backspace'), at least one of them, in your component constructor, or in render function:
+Config special keys events ('left', 'right', 'up', 'down', 'backspace'), at least one of them, in your component constructor, or in render function:
 ```javascript
     SpecialKeysReact.config({
       left: () => {
@@ -34,7 +31,7 @@ Easily integrate your react component with keyboard arrow keys, with the same co
     });
 ```
 
-4. Integrate with your React component:
+Integrate with your React component:
 ```javascript
   <YourComponent {...SpecialKeysReact.events} />
 ```
@@ -93,4 +90,4 @@ export default App;
 ### Remarks
 * When you use `div`, add `tabIndex` property.
 * The element must be on focus in order to detect arrow keys. The arrow keys will be detected when the user will click on the element, or focus it using `tab` key in the keyboard. Alterntively you can program your component to `focus()` when it loaded. 
-* `ArrowKeysReact.config` can be placed in `render` function instead of in the `constuctor` function.
+* `SpecialKeysReact.config` can be placed in `render` function instead of in the `constuctor` function.
