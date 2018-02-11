@@ -71,9 +71,14 @@ class App extends Component {
       },
       backspace: () => {
         this.setState({
-           content: 'down key detected.'
+           content: 'backspace key detected.'
         });
-      }
+      },
+      enter: () => {
+        this.setState({
+         content: 'enter key detected.'
+        });
+       }
     });
   }
   render() {
