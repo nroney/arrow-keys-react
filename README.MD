@@ -2,15 +2,13 @@
 
 This based on leon-good-life's [arrow-keys-react](https://github.com/leon-good-life/arrow-keys-react)
 
-Easily integrate your react component with keyboard arrow keys, with the same configuration used in [swipe-react](https://github.com/leon-good-life/swipe-react) and [wheel-react](https://github.com/leon-good-life/wheel-react) packages.
-
 # Usage
 
 Import it:
 ```javascript
     import SpecialKeysReact from 'special-keys-react';
 ```
-Config special keys events ('left', 'right', 'up', 'down', 'backspace'), at least one of them, in your component constructor, or in render function:
+Config special keys events ('left', 'right', 'up', 'down', 'backspace', 'enter'), at least one of them, in your component constructor, or in render function:
 ```javascript
     SpecialKeysReact.config({
       left: () => {
@@ -27,7 +25,10 @@ Config special keys events ('left', 'right', 'up', 'down', 'backspace'), at leas
       },
       backspace: () => {
         console.log('backspace detected')
-      }
+      },
+      enter: () => {
+        console.log('enter detected')
+       }
     });
 ```
 

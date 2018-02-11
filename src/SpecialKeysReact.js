@@ -3,7 +3,7 @@ let SpecialKeysReact = {};
 SpecialKeysReact._config = {};
 
 SpecialKeysReact.config = (config) => {
-    const options = ['right', 'left', 'up', 'down', 'backspace'];
+    const options = ['right', 'left', 'up', 'down', 'backspace', 'enter'];
     for (let option of options) {
         if (config.hasOwnProperty(option)) {
             SpecialKeysReact._config[option] = config[option];
@@ -31,7 +31,11 @@ SpecialKeysReact.events = {
             }
         } else if (e.keyCode === 8) {
             if (SpecialKeysReact._config.hasOwnProperty('backspace')) {
-                SpecialKeysReact._config.down();
+                SpecialKeysReact._config.backspace();
+            }
+        } else if (e.keyCode === 13) {
+            if (SpecialKeysReact._config.hasOwnProperty('enter')) {
+                SpecialKeysReact._config.enter();
             }
         }
     }
