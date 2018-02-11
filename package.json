@@ -12,13 +12,13 @@
     "url": "git+https://github.com/nroney/special-keys-react.git"
   },
   "keywords": [
-    "arrow",
+    "special",
+    "character",
     "keys",
     "keyboard",
     "react"
   ],
-  "author": "leon.good.life",
-  "license": "MIT",
+  "author": "nroney",
   "bugs": {
     "url": "https://github.com/nroney/special-keys-react/issues"
   },
